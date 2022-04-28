@@ -15,6 +15,17 @@
     display: flex;
     align-items: center;
     width: 1200px;
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      max-width: 100%;
+           
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px; 
+     
+    }
   }
     .header__navigation {
       @extend %align-list;
@@ -168,24 +179,34 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 90%;
+        height: 100%;
       }
     }
     .mob-menu-top {
       margin-top: 48px;
     .mb-menu-list{
-     
+     margin-bottom: 30px;
     }
     .mb-menu-list__item {
-      font-family: 'Roboto';
+      
+      margin-bottom: 32px;
+      
+    } 
+    .mb-menu-list__text{
+      color: var(--second-text-color);
+      font-family: Roboto;
       font-style: normal;
       font-weight: 500;
       font-size: 40px;
       line-height: calc(47/40);
       text-align: left;
       letter-spacing: 0.02em;
-      margin-bottom: 32px;
-    } 
+      &:hover,
+        &:focus {
+      color: var(--accent-color);
+      
+        }
+    }
     .mb-menu-list__item:last-child{
       margin-bottom: 0px;
     }
@@ -194,20 +215,34 @@
     .mb-menu-connect{
       margin-bottom: 64px;
     }
+    .mb-menu-connect__item{
+      margin-bottom: 32px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
     .mb-menu-connect__link {
-      font-family: 'Roboto';
+      font-family: Roboto;
       font-style: normal;
       font-weight: 500;
       font-size: 34px;
       line-height: calc(40/34);
-      margin-bottom: 32px;
+      
+      color: var(--second-text-color);
+      &:hover,
+        &:focus {
+      color: var(--accent-color);
+      
+        }
     }
     .mb-menu-connect__link-mail {
-      font-family: 'Roboto';
+      font-family: Roboto;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
       line-height: calc(28/24);
+      color: var(--second-text-color);
+      
     }
     .mob-social-list {
       display: flex;
@@ -221,7 +256,23 @@
     }
     .mob-social-item{
       display: flex; 
+      
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      margin-right: 10px;
+      &:last-child{
+        border-right: none;  
+      }
      }
+    .mob-social-link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: calc(22/18); 
+      color: var(--accent-color);
+      margin-right: 10px;
+    }
+
 
     .close-menu-btn {
       position: absolute;

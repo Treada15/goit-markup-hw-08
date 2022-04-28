@@ -3,6 +3,16 @@
     background-color: #f5f4fa;
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+    } 
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+       
+        
+                   }
+
     .command__title {
       font-weight: 700;
       font-size: 36px;
@@ -11,6 +21,22 @@
       letter-spacing: 0.03em;
         margin-bottom: 50px;
         color: var(--second-text-color);
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+          margin-bottom: 30px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: calc(33/28);
+        } 
+          @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: calc(33/28);
+            
+                       }  
     }
     .command-list-box__title {
       font-weight: 500;
@@ -67,9 +93,17 @@
           &:nth-child(2n) {
             margin-right: 0px;
           }
+          &:nth-last-child(-n + 2) {
+            margin-bottom: 0px;
+    
+          }
         }
         .command-list__icon{
-          @media screen and (min-width: 320px) and (max-width: 767px) {
+          @media screen and (min-width: 320px) and (max-width: 479px) {
+            
+            width: 354px;
+          }
+          @media screen and (min-width: 4800px) and (max-width: 767px) {
             width: 450px;
             height: 460px;
           }
@@ -92,6 +126,14 @@
     }
     .command-list-box{
       padding: 30px 0px;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding-top: 30px; 
+        padding-bottom: 24px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+      
+      }
       }
       .command-list-social {
         display: flex;
@@ -124,19 +166,4 @@
           fill: currentColor;
         }   
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
