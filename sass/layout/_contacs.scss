@@ -4,7 +4,7 @@
     padding-bottom: 60px;
     padding-top: 60px;
     .tablet-support{
-      display: flex;
+      display: block;
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
        
