@@ -219,7 +219,10 @@
     }
     .mob-menu-top {
       margin-top: 48px;
-    .mb-menu-list{
+    .current_mb{
+      color: var(--accent-color);
+    }
+      .mb-menu-list{
      margin-bottom: 30px;
     }
     .mb-menu-list__item {
